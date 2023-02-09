@@ -1,7 +1,11 @@
-import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import Head from 'next/head';
 import Date from '../../components/date';
+import Head from 'next/head';
+import Layout from '../../components/layout';
+import ReactMarkDown from 'react-markdown';
+import rehypeRaw from "rehype-raw";
+import rehypeSanitize from "rehype-sanitize";
+import remarkGfm from 'remark-gfm';
 import utilStyles from '../../styles/utils.module.css';
 
 export default function Post({ postData }) {
@@ -15,7 +19,12 @@ export default function Post({ postData }) {
                 <div className={utilStyles.lightText}>
                     <Date dateString={postData.date} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <ReactMarkDown
+                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                    remarkPlugins={[remarkGfm]}
+                >
+                    {postData.contentHtml}
+                </ReactMarkDown>
             </article>
         </Layout>
     );
