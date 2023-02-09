@@ -3,10 +3,8 @@ import Date from '../../components/date';
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import ReactMarkDown from 'react-markdown';
-import rehypeRaw from "rehype-raw";
-import rehypeSanitize from "rehype-sanitize";
-import remarkGfm from 'remark-gfm';
 import utilStyles from '../../styles/utils.module.css';
+import components from '../../components/CodeBlock';
 
 export default function Post({ postData }) {
     return (
@@ -20,8 +18,7 @@ export default function Post({ postData }) {
                     <Date dateString={postData.date} />
                 </div>
                 <ReactMarkDown
-                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                    remarkPlugins={[remarkGfm]}
+                    components={components}
                 >
                     {postData.contentHtml}
                 </ReactMarkDown>
