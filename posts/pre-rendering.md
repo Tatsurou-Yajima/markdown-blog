@@ -5,7 +5,7 @@ date: '2022-02-09'
 
 Next.js は 2種類のプリレンディングを持っています。
 
-**Static Site Generation（SSG）** と **Server-side Rendering（SSR）**です。
+**Static Site Generation（SSG）** と **Server-side Rendering（SSR）** です。
 
 2つの違いは、**いつHTMLを生成するか**です。
 
