@@ -6,7 +6,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = '[Your Name]';
+const name = 'T.Yajima';
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -29,10 +29,7 @@ export default function Layout({ children, home }) {
             </Head>
                 <Script
                     src="https://connect.facebook.net/en_US/sdk.js"
-                    strategy="lazyOnload"
-                    onLoad={() =>
-                        console.log(`script loaded correctly, window.FB has been populated`)
-                    }
+                strategy="lazyOnload"
                 />
             <header className={styles.header}>
                 {home ? (
@@ -56,7 +53,7 @@ export default function Layout({ children, home }) {
                                 className={utilStyles.borderCircle}
                                 height={108}
                                 width={108}
-                                        alt={name}
+                                    alt={name}
                             />
                         </Link>
                         <h2 className={utilStyles.headingLg}>
