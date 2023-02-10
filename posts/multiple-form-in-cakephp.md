@@ -28,7 +28,7 @@ CakePHPで実装しますが、別の言語でも似たような実装ができ�
 
 ビューテンプレートファイル
 
-```php
+```php:test.php
 <?= $this->Form->button('form_1', [
     ['action' => 'action_1'],
     'class' => 'btn btn-primary',

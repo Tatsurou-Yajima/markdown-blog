@@ -25,3 +25,10 @@ img {
     max-width: 100%;
     display: block;
 }
+
+code:not([class]) {
+    color: #434343;
+    padding: 0.25em;
+    background-color: rgb(243, 243, 243);
+    border-radius: 0.3em;
+}
