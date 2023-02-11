@@ -53,7 +53,7 @@ export default function Layout({
                 <main>{children}</main>
                 {!home && (
                     <div className={styles.backToHome}>
-                        <Link href="/">TOP</Link>
+                        <Link href="/">← TOP</Link>
                     </div>
                 )}
             </div>
