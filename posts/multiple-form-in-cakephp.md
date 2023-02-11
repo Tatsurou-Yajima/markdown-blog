@@ -26,9 +26,7 @@ CakePHPで実装しますが、別の言語でも似たような実装ができ�
 
 今回は以下のように実装します。
 
-ビューテンプレートファイル
-
-```php:test.php
+```php:View
 <?= $this->Form->button('form_1', [
     ['action' => 'action_1'],
     'class' => 'btn btn-primary',
@@ -47,11 +45,9 @@ CakePHPで実装しますが、別の言語でも似たような実装ができ�
 
 コントローラーでは以下のように記述します。
 
-TestController.php
-```php
+```php:Controller
 if ($this->request->is(['post'])) {
     $requestData = $this->request->getData();
-
     if (isset($requestData['form_1'])) {
         // form_1 ボタンの処理
     } else {
