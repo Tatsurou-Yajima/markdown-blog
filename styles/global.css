@@ -37,3 +37,22 @@ code:not([class]) {
 ul {
     line-height: 2em;
 }
+
+h2 {
+    margin-top: 1.7em;
+    border-left: solid 5px #afafaf;
+    padding: 10px;
+    background: #f3f3f3;
+    border-bottom: solid 3px #e5e5e5;
+}
+
+h3 {
+    margin-top: 1.5em;
+    border-left: solid 3px #afafaf;
+    padding: 2px 8px;
+    background: #fbfbfb;
+}
+
+h4 {
+    margin-top: 1.3em;
+}

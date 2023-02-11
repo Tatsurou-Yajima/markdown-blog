@@ -72,6 +72,16 @@
     margin-top: 0;
 }
 
+@media (max-width: 768px) {
+    .topH1 {
+        text-align: center;
+        color: #fff;
+        text-shadow: 0px 0px 20px #000;
+        padding-top: 70px;
+        font-size: 2rem;
+        margin-top: 0;
+    }
+}
 .textDecorationNone:hover {
     text-decoration: none;
 }

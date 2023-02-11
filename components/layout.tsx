@@ -44,7 +44,7 @@ export default function Layout({
                             <h1 className={utilStyles.topH1}>{siteTitle}</h1>
                         </Link>
                         <div>
-                            <h2 className={utilStyles.topH2}>WEBエンジニアとして活動する中で感じたさまざまなことをご紹介します。</h2>
+                            <p className={utilStyles.topH2}>WEBエンジニアとして活動する中で感じたさまざまなことをご紹介します。</p>
                         </div>
                     </div>
                 </div>
