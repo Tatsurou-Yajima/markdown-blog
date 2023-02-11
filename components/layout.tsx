@@ -7,7 +7,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'T.Yajima';
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'やじま の技術ブログ'
 
 export default function Layout({
     children,
@@ -22,7 +22,7 @@ export default function Layout({
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。"
                 />
                 <meta
                     property="og:image"
