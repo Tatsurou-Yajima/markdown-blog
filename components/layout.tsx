@@ -26,17 +26,11 @@ export default function Layout({
                 />
                 <meta
                     property="og:image"
-                    content={`https://og-image.vercel.app/${encodeURI(
-                        siteTitle
-                    )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+                    content="https://yajima-tech-blog.vercel.app/_next/static/media/20221216085448.7b375d73.jpg"
                 />
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <Script
-                src="https://connect.facebook.net/en_US/sdk.js"
-                strategy="lazyOnload"
-            />
             <header className={styles.header}>
                 <div className={styles.width100}>
                     <div className={utilStyles.topImage}>
