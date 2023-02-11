@@ -29,6 +29,7 @@ export default function Layout({
                     content="https://yajima-tech-blog.vercel.app/_next/static/media/20221216085448.7b375d73.jpg"
                 />
                 <meta name="og:title" content={siteTitle} />
+                <meta name="twitter:image" content="https://yajima-tech-blog.vercel.app/_next/static/media/20221216085448.7b375d73.jpg" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className={styles.header}>
