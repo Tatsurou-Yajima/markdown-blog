@@ -2,12 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script'
 
-import styles from './layout.module.css';
+import styles from '../styles//layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'T.Yajima';
-export const siteTitle = 'やじま の技術ブログ'
+export const siteTitle = 'Yajima の技術ブログ'
 
 export default function Layout({
     children,
@@ -17,7 +17,7 @@ export default function Layout({
     home?: boolean
 }) {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -38,44 +38,25 @@ export default function Layout({
                 strategy="lazyOnload"
             />
             <header className={styles.header}>
-                {home ? (
-                    <>
-                        <Image
-                            priority
-                            src="/images/profile.jpg"
-                            className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
-                            alt={name}
-                        />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                    </>
-                ) : (
-                    <>
-                        <Link href="/">
-                            <Image
-                                priority
-                                src="/images/profile.jpg"
-                                className={utilStyles.borderCircle}
-                                height={108}
-                                width={108}
-                                alt={name}
-                            />
+                <div className={styles.width100}>
+                    <div className={utilStyles.topImage}>
+                        <Link href="/" className={utilStyles.textDecorationNone}>
+                            <h1 className={utilStyles.topH1}>{siteTitle}</h1>
                         </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/" className={utilStyles.colorInherit}>
-                                {name}
-                            </Link>
-                        </h2>
-                    </>
-                )}
-            </header>
-            <main>{children}</main>
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">← Back to home</Link>
+                        <div>
+                            <h2 className={utilStyles.topH2}>WEBエンジニアとして活動する中で感じたさまざまなことをご紹介します。</h2>
+                        </div>
+                    </div>
                 </div>
-            )}
+            </header>
+            <div className={styles.container}>
+                <main>{children}</main>
+                {!home && (
+                    <div className={styles.backToHome}>
+                        <Link href="/">TOP</Link>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }
