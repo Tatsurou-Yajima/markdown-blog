@@ -56,3 +56,7 @@ h3 {
 h4 {
     margin-top: 1.3em;
 }
+
+.code-block-title {
+    line-height: normal;
+}
