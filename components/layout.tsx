@@ -37,7 +37,8 @@ export default function Layout({
                     content={description}
                 />
                 <meta
-                    name="twitter:title">{siteTitle}</meta>
+                    name="twitter:title"
+                    content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className={styles.header}>
