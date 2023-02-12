@@ -44,9 +44,8 @@ export default function Layout({
                     key="json-ld"
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: `{
-                        "image":"${defaultImagePath}"
-                    }`}}
+                        __html: `{"image":["${defaultImagePath}"]}`
+                    }}
                 >
                 </script>
             </Head>
