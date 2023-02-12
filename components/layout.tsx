@@ -7,7 +7,7 @@ import utilStyles from '../styles/utils.module.css';
 
 export const siteTitle = 'Yajima の技術ブログ'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
-export const defaultImagePath = 'https://yajima-tech-blog.vercel.app/_next/static/media/top-image.jpg'
+export const defaultImagePath = 'https://yajima-tech-blog.vercel.app/_next/static/media/top-image.5f637259.jpg'
 
 export default function Layout({
     children,
