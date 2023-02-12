@@ -10,7 +10,7 @@ const name = 'T.Yajima';
 export const siteTitle = 'Yajima の技術ブログ'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
 // export const defaultImagePath = 'https://yajima-tech-blog.vercel.app/_next/static/media/20221216085448.7b375d73.jpg'
-export const defaultImagePath = 'https://image.itmedia.co.jp/business/articles/2302/11/cover_news041.jpg'
+export const defaultImagePath = 'http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg'
 
 export default function Layout({
     children,
@@ -27,29 +27,20 @@ export default function Layout({
                     name="description"
                     content="サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。"
                 />
-                <meta
-                    property="og:image"
-                    content={defaultImagePath}
-                />
+                <meta property="og:image" content={defaultImagePath} />
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:image" content={defaultImagePath} />
-                <meta
-                    name="twitter:description"
-                    content={description}
-                />
-                <meta
-                    name="twitter:title"
-                    content={siteTitle} />
+                <meta name="twitter:description" content={description} />
+                <meta name="twitter:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
-                <script
-                    key="json-ld"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: `{"image":["${defaultImagePath}"]}`
-                    }}
-                >
-                </script>
+                <meta name="twitter:site" content="@Yazmatto" />
+                <meta name="twitter:creator" content="@Yazmatto" />
+                <meta name="twitter:image" content={defaultImagePath} />
             </Head>
+            <Script
+                src="https://connect.facebook.net/en_US/sdk.js"
+                strategy="lazyOnload"
+            />
             <header className={styles.header}>
                 <div className={styles.width100}>
                     <div className={utilStyles.topImage}>
