@@ -40,6 +40,15 @@ export default function Layout({
                     name="twitter:title"
                     content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
+                <script
+                    key="json-ld"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: `{
+                        "image":"${defaultImagePath}"
+                    }`}}
+                >
+                </script>
             </Head>
             <header className={styles.header}>
                 <div className={styles.width100}>
