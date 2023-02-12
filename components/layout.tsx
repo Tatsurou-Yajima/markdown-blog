@@ -9,7 +9,8 @@ import Link from 'next/link';
 const name = 'T.Yajima';
 export const siteTitle = 'Yajima の技術ブログ'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
-export const defaultImagePath = 'https://yajima-tech-blog.vercel.app/_next/static/media/20221216085448.7b375d73.jpg'
+// export const defaultImagePath = 'https://yajima-tech-blog.vercel.app/_next/static/media/20221216085448.7b375d73.jpg'
+export const defaultImagePath = 'https://image.itmedia.co.jp/business/articles/2302/11/cover_news041.jpg'
 
 export default function Layout({
     children,
