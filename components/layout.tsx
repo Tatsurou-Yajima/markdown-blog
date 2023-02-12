@@ -1,12 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Link from 'next/link';
 import Script from 'next/script'
 
 import styles from '../styles//layout.module.css';
 import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 
-const name = 'T.Yajima';
 export const siteTitle = 'Yajima の技術ブログ'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
 export const defaultImagePath = 'https://yajima-tech-blog.vercel.app/_next/static/media/top-image.jpg'
