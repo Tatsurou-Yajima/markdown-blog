@@ -5,7 +5,7 @@ import Script from 'next/script'
 import styles from '../styles//layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
-export const siteTitle = 'Yajima の技術ブログ'
+export const siteTitle = 'YajiMaga-TECH'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
 export const defaultImagePath = 'https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/top-image-20230214.jpg'
 
