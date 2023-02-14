@@ -53,8 +53,6 @@
 
 .topImage {
     width: 100%;
-    max-width: 960px;
-    height: 200px;
     background-image: url('https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg');
     background-position: center -21px;
     background-repeat: no-repeat;

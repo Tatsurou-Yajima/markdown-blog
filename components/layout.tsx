@@ -39,15 +39,14 @@ export default function Layout({
                 strategy="lazyOnload"
             />
             <header className={styles.header}>
+                <div className={styles.logoContainer}>
+                    <h1 className={styles.topH1}>バグ解消法、お役立ち情報など</h1>
+                    <Link href="/">
+                        <img src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/yajimaga-logo.png' className={styles.logo} />
+                    </Link>
+                </div>
                 <div className={styles.width100}>
-                    <div className={utilStyles.topImage}>
-                        <Link href="/" className={utilStyles.textDecorationNone}>
-                            <h1 className={utilStyles.topH1}>{siteTitle}</h1>
-                        </Link>
-                        <div>
-                            <p className={utilStyles.topH2}>WEBエンジニアとして活動する中で感じたさまざまなことをご紹介します。</p>
-                        </div>
-                    </div>
+                    <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
                 </div>
             </header>
             <div className={styles.container}>
