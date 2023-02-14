@@ -49,13 +49,16 @@ export default function Layout({
                     <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
                 </div>
             </header>
-            <div className={styles.container}>
-                <main>{children}</main>
-                {!home && (
-                    <div className={styles.backToHome}>
-                        <Link href="/">← TOP</Link>
-                    </div>
-                )}
+            <div className={styles.content}>
+                <div className={`${styles.container} ${styles.main}`}>
+                    <main>{children}</main>
+                    {!home && (
+                        <div className={styles.backToHome}>
+                            <Link href="/">← TOP</Link>
+                        </div>
+                    )}
+                </div>
+                <div id='side' className={styles.side}></div>
             </div>
         </div>
     );

@@ -47,3 +47,19 @@
 .logoContainer {
     padding: 0.8em 1.2em;
 }
+
+.content {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.main {
+    margin: 1em;
+    margin-right: 320px;
+}
+
+@media (max-width: 960px) {
+    .main {
+        margin: 1em;
+    }
+}
