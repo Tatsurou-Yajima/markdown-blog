@@ -4,6 +4,7 @@ import Script from 'next/script'
 
 import styles from '../styles//layout.module.css';
 import utilStyles from '../styles/utils.module.css';
+import Profile from './Profile';
 
 export const siteTitle = 'YajiMaga-TECH'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
@@ -49,16 +50,22 @@ export default function Layout({
                     <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
                 </div>
             </header>
-            <div className={styles.content}>
-                <div className={`${styles.container} ${styles.main}`}>
-                    <main>{children}</main>
+            <div className={`${styles.content}`}>
+                <main className={styles.main}>
+                    <div className={`${styles.contentInner} ${styles.boxShadow}`}>
+                        <div className={styles.container}>
+                            {children}
                     {!home && (
                         <div className={styles.backToHome}>
                             <Link href="/">← TOP</Link>
                         </div>
-                    )}
+                            )}
+                        </div>
+                    </div>
+                </main>
+                <div id='side' className={styles.side}>
+                    <Profile></Profile>
                 </div>
-                <div id='side' className={styles.side}></div>
             </div>
         </div>
     );

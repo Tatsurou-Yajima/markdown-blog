@@ -56,10 +56,28 @@
 .main {
     margin: 1em;
     margin-right: 320px;
+    margin-left: 0px;
 }
 
 @media (max-width: 960px) {
     .main {
         margin: 1em;
     }
+}
+
+.side {
+    float: right;
+    width: 300px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.contentInner {
+    float: left;
+    width: 100%;
+    /* margin-right: -300px; */
+}
+
+.boxShadow {
+    box-shadow: 0 1px 8px rgb(0 0 0 / 10%), 0 4px 4px -4px rgb(0 0 0 / 10%);
 }
