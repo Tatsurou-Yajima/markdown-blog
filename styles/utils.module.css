@@ -108,9 +108,10 @@
 }
 
 .authorImage {
-    width: 100px;
-    height: auto;
-    margin: 50px auto 5px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    margin: 40px auto 0;
 }
 
 .authorBox {
