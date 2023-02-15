@@ -96,8 +96,24 @@
 .profile {
     text-align: center;
     width: 100%;
-    box-sizing: border-box;
-    background: #fff;
-    box-shadow: 0 1px 8px rgb(0 0 0 / 10%), 0 4px 4px -4px rgb(0 0 0 / 10%);
-    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.authorDescription {
+    font-size: 80%;
+}
+
+.authorImage {
+    width: 100px;
+    height: auto;
+    margin: 50px auto 5px;
+}
+
+.authorBox {
+    padding: 10px 20px 20px;
+    text-align: center;
 }

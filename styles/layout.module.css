@@ -70,6 +70,9 @@
     width: 300px;
     padding: 0px;
     background-color: #fff;
+    box-sizing: border-box;
+        box-shadow: 0 1px 8px rgb(0 0 0 / 10%), 0 4px 4px -4px rgb(0 0 0 / 10%);
+        margin-bottom: 10px;
 }
 
 .contentInner {
