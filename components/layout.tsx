@@ -46,19 +46,21 @@ export default function Layout({
                         <img src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/yajimaga-logo.png' className={styles.logo} />
                     </Link>
                 </div>
-                <div className={styles.width100}>
-                    <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
-                </div>
+                {home && (
+                    <div className={styles.width100}>
+                        <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
+                    </div>
+                )}
             </header>
             <div className={`${styles.content}`}>
                 <main className={styles.main}>
                     <div className={`${styles.contentInner} ${styles.boxShadow}`}>
                         <div className={styles.container}>
                             {children}
-                    {!home && (
-                        <div className={styles.backToHome}>
-                            <Link href="/">← TOP</Link>
-                        </div>
+                            {!home && (
+                                <div className={styles.backToHome}>
+                                    <Link href="/">← TOP</Link>
+                                </div>
                             )}
                         </div>
                     </div>
