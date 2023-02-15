@@ -54,8 +54,8 @@ export default function Layout({
             </header>
             <div className={`${styles.content}`}>
                 <main className={styles.main}>
-                    <div className={`${styles.contentInner} ${styles.boxShadow}`}>
-                        <div className={styles.container}>
+                    <div className={styles.contentInner}>
+                        <div className={`${styles.container} ${styles.boxShadow}`}>
                             {children}
                             {!home && (
                                 <div className={styles.backToHome}>
