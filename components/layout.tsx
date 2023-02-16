@@ -5,6 +5,7 @@ import Script from 'next/script'
 import styles from '../styles/layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Profile from './Profile';
+import Logo from './Logo';
 
 export const siteTitle = 'YajiMaga-TECH'
 export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
@@ -41,12 +42,7 @@ export default function Layout({
                 strategy="lazyOnload"
             />
             <header className={styles.header}>
-                <div className={styles.logoContainer}>
-                    <h1 className={styles.topH1}>バグ解消法、お役立ち情報など</h1>
-                    <Link href="/">
-                        <img src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/yajimaga-logo.png' className={styles.logo} />
-                    </Link>
-                </div>
+                <Logo></Logo>
                 {home && (
                     <div className={styles.width100}>
                         <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
