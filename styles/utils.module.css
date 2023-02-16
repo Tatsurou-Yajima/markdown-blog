@@ -121,10 +121,28 @@
 
 .twitter {
     background: #71abdf;
+}
+
+.twitter:hover {
+    background: #91c0ea;
+    transition: all .5s;
+}
+
+.instagram {
+    background-image: linear-gradient(-135deg, #4933f7, #ef1837, #fbd980);
+}
+
+.instagram:hover {
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.snsCircle {
     padding: 0;
     text-align: center;
     display: inline-block;
-    margin-right: 0;
+    margin-right: 5px;
+        margin-left: 5px;
     float: none;
     list-style: none;
     width: 40px;
@@ -134,11 +152,6 @@
     vertical-align: middle;
     border-radius: 50%;
     padding-left: 2px;
-}
-
-.twitter:hover {
-    background: #5683aa;
-    transition: all .5s;
 }
 
 .profileSns {
@@ -163,7 +176,8 @@
     font-size: 21px;
     height: 40px;
     width: 40px;
-    padding: 0;
+    margin: -20px;
+        padding: 20px;
     justify-content: center;
     position: relative;
     align-items: stretch;

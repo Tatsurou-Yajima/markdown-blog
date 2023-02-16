@@ -15,12 +15,12 @@ export default function Profile() {
                     <p className={utilStyles.authorDescription}>{authorDescription}</p>
                 </div>
                 <ul className={`${utilStyles.clearfix} ${utilStyles.profileSns} ${utilStyles.p0} ${utilStyles.mb30}`}>
-                    <li className={utilStyles.twitter}>
+                    <li className={`${utilStyles.twitter} ${utilStyles.snsCircle}`}>
                         <a rel="nofollow" href="https://twitter.com/Yazmatto" target="_blank" className={utilStyles.snsLink}>
                             <i className={`fab fa-twitter`}></i>
                         </a>
                     </li>
-                    <li className={utilStyles.instagram}>
+                    <li className={`${utilStyles.instagram} ${utilStyles.snsCircle}`}>
                         <a rel="nofollow" href="https://www.instagram.com/tatsuro_yajima" target="_blank" className={utilStyles.snsLink}>
                             <i className={`fab fa-instagram`}></i>
                         </a>
