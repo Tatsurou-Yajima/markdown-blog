@@ -7,10 +7,6 @@ import Profile from './Profile';
 import Logo from './Logo';
 import SiteHead from './Head';
 
-export const siteTitle = 'YajiMaga-TECH'
-export const description = 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
-export const defaultImagePath = 'https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/top-image-20230214.jpg'
-
 export default function Layout({
     children,
     home
