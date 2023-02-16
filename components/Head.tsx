@@ -12,6 +12,7 @@ export default function () {
                 name="description"
                 content="サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。"
             />
+            <meta name="viewport" content="width=device-width,initial-scale=1" />
             <meta property="og:image" content={defaultImagePath} />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:image" content={defaultImagePath} />
@@ -21,6 +22,7 @@ export default function () {
             <meta name="twitter:site" content="@Yazmatto" />
             <meta name="twitter:creator" content="@Yazmatto" />
             <meta name="twitter:image" content={defaultImagePath} />
+            <meta name="twitter:image:src" content={defaultImagePath} />
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         </Head>
     )
