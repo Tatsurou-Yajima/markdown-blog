@@ -34,6 +34,7 @@ export default function Layout({
                 <meta name="twitter:site" content="@Yazmatto" />
                 <meta name="twitter:creator" content="@Yazmatto" />
                 <meta name="twitter:image" content={defaultImagePath} />
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
             </Head>
             <Script
                 src="https://connect.facebook.net/en_US/sdk.js"

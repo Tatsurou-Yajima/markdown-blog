@@ -115,6 +115,65 @@
 }
 
 .authorBox {
-    padding: 10px 20px 20px;
+    padding: 10px 20px 0 20px;
     text-align: center;
+}
+
+.twitter {
+    background: #71abdf;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    margin-right: 0;
+    float: none;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    font-size: 24px;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding-left: 2px;
+}
+
+.twitter:hover {
+    background: #5683aa;
+    transition: all .5s;
+}
+
+.profileSns {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.snsLink {
+    margin: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 21px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    align-items: stretch;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 42px;
+    transition: all .5s;
+}
+
+.mb30 {
+    margin-bottom: 30px;
 }
