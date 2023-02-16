@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Script from 'next/script'
 
-import styles from '../styles//layout.module.css';
+import styles from '../styles/layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Profile from './Profile';
 
