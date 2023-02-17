@@ -1,6 +1,5 @@
 .container {
     max-width: 960px;
-    padding: 3rem 5rem;
     margin: 0 auto 6rem;
     background-color: #fff;
 }
@@ -8,7 +7,6 @@
 @media (max-width: 960px) {
     .container {
         max-width: 960px;
-        padding: 1rem 2rem;
         margin: 0 auto 6rem;
     }
 }
@@ -20,7 +18,8 @@
 }
 
 .backToHome {
-    margin: 3rem 0 0;
+    margin: 3rem;
+    padding-bottom: 3rem;
 }
 
 .width100 {

@@ -191,3 +191,27 @@
 .mb30 {
     margin-bottom: 30px;
 }
+
+.articleDl {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #f3f3f3;
+}
+
+.articleDd {
+    padding-left: 115px;
+    transition: all .5s;
+    margin-left: 0;
+}
+
+.articleDt {
+    float: left;
+    width: 100px;
+    transition: all .5s;
+}
+
+.articlePadding {
+    padding: 1em 3em;
+}

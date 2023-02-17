@@ -21,7 +21,7 @@ export default function Post({
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article>
+            <article className={utilStyles.articlePadding}>
                 <div className={utilStyles.lightText}>
                     <Date dateString={postData.date} />
                 </div>
