@@ -37,7 +37,7 @@ export default function Home({
                                     <dd className={`${utilStyles.listItem}} ${utilStyles.articleDd}`} key={id}>
                                         {title}
                                         <br />
-                                        <small className={utilStyles.lightText}>
+                                        <small className={`${utilStyles.lightText} ${utilStyles.publishDate}`}>
                                             <FontAwesomeIcon className={utilStyles.calenderIcon} icon={faCalendarDays} />
                                             <Date dateString={date} />
                                         </small>
