@@ -26,7 +26,7 @@ export default function Home({
                 <aside>
                     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                         {allPostsData.map(({ id, date, title, thumbnail }) => (
-                            <Link href={`/posts/${id}`}>
+                            <Link className={utilStyles.articleLink} href={`/posts/${id}`}>
                                 <dl className={utilStyles.articleDl}>
                                     <dt className={utilStyles.articleDt}>
                                         <img className={utilStyles.thumbnail} src={thumbnail} />

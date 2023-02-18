@@ -215,3 +215,8 @@
 .articlePadding {
     padding: 1em 3em;
 }
+
+.articleLink:hover {
+    opacity: 0.7;
+    transition: all .5s;
+}
