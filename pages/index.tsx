@@ -14,6 +14,7 @@ export default function Home({
         date: string
         title: string
         id: string
+        thumbnail: string
     }[]
 }) {
     return (
@@ -24,17 +25,21 @@ export default function Home({
             <article className={utilStyles.articlePadding}>
                 <aside>
                     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                        {allPostsData.map(({ id, date, title }) => (
-                            <dl className={utilStyles.articleDl}>
-                                <dt className={utilStyles.articleDt}></dt>
-                                <dd className={`${utilStyles.listItem}} ${utilStyles.articleDd}`} key={id}>
-                                    <Link href={`/posts/${id}`}>{title}</Link>
-                                    <br />
-                                    <small className={utilStyles.lightText}>
-                                        <Date dateString={date} />
-                                    </small>
-                                </dd>
-                            </dl>
+                        {allPostsData.map(({ id, date, title, thumbnail }) => (
+                            <Link href={`/posts/${id}`}>
+                                <dl className={utilStyles.articleDl}>
+                                    <dt className={utilStyles.articleDt}>
+                                        <img className={utilStyles.thumbnail} src={thumbnail} />
+                                    </dt>
+                                    <dd className={`${utilStyles.listItem}} ${utilStyles.articleDd}`} key={id}>
+                                        {title}
+                                        <br />
+                                        <small className={utilStyles.lightText}>
+                                            <Date dateString={date} />
+                                        </small>
+                                    </dd>
+                                </dl>
+                            </Link>
                         ))}
                     </section>
                 </aside>

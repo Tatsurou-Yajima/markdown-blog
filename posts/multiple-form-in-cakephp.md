@@ -1,6 +1,7 @@
 ---
 title: '同一画面で複数のsubmitボタンを実装する方法'
 date: '2023-02-10'
+thumbnail: '/images/cakephp_logo.jpg'
 ---
 
 # 同一画面で複数のsubmitボタンを実装する方法
