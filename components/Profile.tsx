@@ -14,7 +14,7 @@ export default function Profile() {
                     <p className={utilStyles.author}>{author}</p>
                     <p className={utilStyles.authorDescription}>{authorDescription}</p>
                 </div>
-                <ul className={`${utilStyles.clearfix} ${utilStyles.profileSns} ${utilStyles.p0} ${utilStyles.mb30}`}>
+                <ul className={`${utilStyles.profileSns} ${utilStyles.p0} ${utilStyles.mb30}`}>
                     <li className={`${utilStyles.twitter} ${utilStyles.snsCircle}`}>
                         <a rel="nofollow" href="https://twitter.com/Yazmatto" target="_blank" className={utilStyles.snsLink}>
                             <i className={`fab fa-twitter`}></i>
