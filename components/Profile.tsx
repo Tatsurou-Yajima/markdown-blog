@@ -1,7 +1,7 @@
 import utilStyles from '../styles/utils.module.css';
 
-const author = 'やじま（Tatsuro Yajima）';
-const authorDescription = '東京都在住のWEBエンジニア。 得意言語はPHP。 フレームワークはLaravel, CakePHPなど。 本ブログは Node.js + Next.js で作成しました。';
+export const author = 'やじま（Tatsuro Yajima）';
+export const authorDescription = '東京都在住のWEBエンジニア。 得意言語はPHP。 フレームワークはLaravel, CakePHPなど。 本ブログは Node.js + Next.js で作成しました。';
 
 export default function Profile() {
     return (
