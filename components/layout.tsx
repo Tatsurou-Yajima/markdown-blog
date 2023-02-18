@@ -6,6 +6,7 @@ import utilStyles from '../styles/utils.module.css';
 import Profile from './Profile';
 import Logo from './Logo';
 import SiteHead from './Head';
+import Footer from './Footer';
 
 export default function Layout({
     children,
@@ -47,8 +48,12 @@ export default function Layout({
                     </div>
                 </main>
                 <div id='side' className={styles.side}>
-                    <Profile />
+                    <div className={utilStyles.displayInPC}>
+                        <Profile />
+                    </div>
                 </div>
+
+                <Footer />
             </div>
         </div>
     );

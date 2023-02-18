@@ -7,7 +7,7 @@
 @media (max-width: 960px) {
     .container {
         max-width: 960px;
-        margin: 0 auto 6rem;
+        margin: 0 auto 1rem;
     }
 }
 
@@ -81,4 +81,17 @@
 
 .boxShadow {
     box-shadow: 0 1px 8px rgb(0 0 0 / 10%), 0 4px 4px -4px rgb(0 0 0 / 10%);
+}
+
+.footer {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    max-width: none;
+}
+
+@media (max-width: 960px) {
+    .footer {
+        margin: 1em;
+        max-width: 960px;
+    }
 }

@@ -236,3 +236,23 @@
 .thumbnail {
     object-fit: cover;
 }
+
+.displayInPC {
+    display: block;
+}
+
+@media (max-width: 960px) {
+    .displayInPC {
+        display: none;
+    }
+}
+
+.disabledInPC {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .disabledInPC {
+        display: block;
+    }
+}
