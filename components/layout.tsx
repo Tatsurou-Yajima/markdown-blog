@@ -22,7 +22,11 @@ export default function Layout({
                 strategy="lazyOnload"
             />
             <header className={styles.header}>
-                <Logo />
+                <div className={`${styles.content}`}>
+                    <div className={`${styles.contentInner}`}>
+                        <Logo />
+                    </div>
+                </div>
                 {home && (
                     <div className={styles.width100}>
                         <img className={utilStyles.topImage} src='https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/20221216085448.jpg' />
