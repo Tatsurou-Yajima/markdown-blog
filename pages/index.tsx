@@ -6,6 +6,9 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date'
 import { GetStaticProps } from 'next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Home({
     allPostsData
@@ -35,6 +38,7 @@ export default function Home({
                                         {title}
                                         <br />
                                         <small className={utilStyles.lightText}>
+                                            <FontAwesomeIcon className={utilStyles.calenderIcon} icon={faCalendarDays} />
                                             <Date dateString={date} />
                                         </small>
                                     </dd>
