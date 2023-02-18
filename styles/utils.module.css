@@ -209,7 +209,9 @@
 .articleDt {
     float: left;
     width: 100px;
+    height: 60px;
     transition: all .5s;
+    display: flex;
 }
 
 .articlePadding {
@@ -229,4 +231,8 @@
 
 .publishDate {
     font-size: 0.7em;
+}
+
+.thumbnail {
+    object-fit: cover;
 }
