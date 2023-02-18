@@ -6,6 +6,8 @@ import ReactMarkDown from 'react-markdown';
 import utilStyles from '../../styles/utils.module.css';
 import CodeBlock from '../../components/CodeBlock';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 export default function Post({
     postData
@@ -23,6 +25,7 @@ export default function Post({
             </Head>
             <article className={utilStyles.articlePadding}>
                 <div className={utilStyles.lightText}>
+                    <FontAwesomeIcon className={utilStyles.calenderIcon} icon={faCalendarDays} />
                     <Date dateString={postData.date} />
                 </div>
                 <ReactMarkDown
