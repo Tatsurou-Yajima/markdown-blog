@@ -44,6 +44,7 @@
 
 .logoContainer {
     padding: 0.8em 1.2em;
+    background-color: #fff;
 }
 
 .content {
@@ -51,6 +52,9 @@
     margin: 0 auto;
 }
 
+.footerContent {
+    max-width: none;
+}
 .main {
     margin: 1em;
     margin-right: 320px;
@@ -110,4 +114,9 @@
 
 .mb0 {
     margin-bottom: 0;
+}
+
+.mx0 {
+    margin-left: 0;
+    margin-right: 0;
 }

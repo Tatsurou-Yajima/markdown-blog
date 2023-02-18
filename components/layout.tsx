@@ -52,9 +52,9 @@ export default function Layout({
                         <Profile />
                     </div>
                 </div>
-
-                <Footer />
             </div>
+
+            <Footer />
         </div>
     );
 }

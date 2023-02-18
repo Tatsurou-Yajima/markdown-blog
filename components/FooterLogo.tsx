@@ -4,9 +4,9 @@ import styles from '../styles/layout.module.css'
 
 export default function FooterLogo() {
     return (
-        <div className={`${styles.content}`}>
+        <div className={`${styles.footerContent}`}>
             <div className={`${styles.contentInner}`}>
-                <div className={`${styles.container} ${styles.mb0}`}>
+                <div className={`${styles.mb0} ${styles.mx0}`}>
                     <div className={styles.logoContainer}>
                         <h5 className={styles.footerDescription}>バグ解消法、お役立ち情報など</h5>
                         <Link href="/">
