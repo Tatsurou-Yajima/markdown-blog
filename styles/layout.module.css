@@ -29,7 +29,6 @@
 .logo {
     width: 340px;
     height: auto;
-
 }
 
 .topH1 {
@@ -94,4 +93,21 @@
         margin: 1em;
         max-width: 960px;
     }
+}
+
+.footerDescription {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.5em;
+    margin: 0;
+}
+
+.footerLogo {
+    width: 220px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mb0 {
+    margin-bottom: 0;
 }
