@@ -218,6 +218,11 @@
     padding: 1em 3em;
 }
 
+@media (max-width: 960px) {
+    .articlePadding {
+        padding: 1em;
+    }
+}
 .articleLink:hover {
     opacity: 0.7;
     transition: all .5s;
