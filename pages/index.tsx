@@ -34,7 +34,7 @@ export default function Home({
                                     <dt className={utilStyles.articleDt}>
                                         <img className={utilStyles.thumbnail} src={thumbnail} />
                                     </dt>
-                                    <dd className={`${utilStyles.listItem}} ${utilStyles.articleDd}`} key={id}>
+                                    <dd className={`${utilStyles.listItem}} ${utilStyles.articleDd} text-dark`} key={id}>
                                         {title}
                                         <br />
                                         <small className={`${utilStyles.lightText} ${utilStyles.publishDate}`}>

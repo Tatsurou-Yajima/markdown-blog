@@ -67,3 +67,7 @@ blockquote {
     border-left: #e7e7e7 solid 4px;
     padding-left: 5px;
 }
+
+.text-dark {
+    color: #4c4c4c;
+}
