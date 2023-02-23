@@ -18,11 +18,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #0155c2;
-    text-decoration: none;
-}
-
 img {
     max-width: 100%;
     display: block;
