@@ -27,6 +27,7 @@ export default function Post({
                 <meta name="twitter:title" content={postData.title} />
                 <meta name="twitter:title" content={postData.title} />
                 <meta name='twitter:image' content={postData.thumbnail} />
+                <meta property='og:image' content={postData.thumbnail} />
             </Head>
             <article className={utilStyles.articlePadding}>
                 <div className={utilStyles.lightText}>
