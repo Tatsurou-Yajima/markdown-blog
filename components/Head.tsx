@@ -22,7 +22,6 @@ export default function () {
             <meta name="twitter:site" content="@Yazmatto" />
             <meta name="twitter:creator" content="@Yazmatto" />
             <meta name="twitter:image" content={defaultImagePath} />
-            <meta name="twitter:image:src" content={defaultImagePath} />
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         </Head>
     )

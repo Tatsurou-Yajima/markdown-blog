@@ -23,6 +23,7 @@ export default function Post({
         <Layout>
             <Head>
                 <title>{postData.title}</title>
+                <meta name='og:title' content={postData.title} />
                 <meta name="twitter:title" content={postData.title} />
                 <meta name="twitter:title" content={postData.title} />
                 <meta name='twitter:image' content={postData.thumbnail} />
