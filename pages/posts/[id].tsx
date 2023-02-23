@@ -16,12 +16,16 @@ export default function Post({
         title: string
         date: string
         contentHtml: string
+        thumbnail: string
     }
 }) {
     return (
         <Layout>
             <Head>
                 <title>{postData.title}</title>
+                <meta name="twitter:title" content={postData.title} />
+                <meta name="twitter:title" content={postData.title} />
+                <meta name='twitter:image' content={postData.thumbnail} />
             </Head>
             <article className={utilStyles.articlePadding}>
                 <div className={utilStyles.lightText}>
