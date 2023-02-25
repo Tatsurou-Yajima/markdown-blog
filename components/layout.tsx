@@ -22,18 +22,6 @@ export default function Layout({
                 src="https://connect.facebook.net/en_US/sdk.js"
                 strategy="lazyOnload"
             />
-            <Script
-                async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA4_MEASUREMENT_ID}`} />
-            <Script
-                dangerouslySetInnerHTML={{
-                    __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', '${process.env.GA4_MEASUREMENT_ID}');
-                    `,
-                }}
-            />
             <header className={styles.header}>
                 <div className={`${styles.content}`}>
                     <div className={`${styles.contentInner}`}>
