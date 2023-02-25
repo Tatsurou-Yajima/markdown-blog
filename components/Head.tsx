@@ -8,9 +8,9 @@ export const defaultImagePath = 'https://images-for-yajima-tech-blog.s3.ap-north
 export default function () {
     return (
         <Head>
-            <Script
+            <script
                 async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA4_MEASUREMENT_ID}`} />
-            <Script
+            <script
                 dangerouslySetInnerHTML={{
                     __html: `
                 window.dataLayer = window.dataLayer || [];
