@@ -16,8 +16,20 @@ export default function Layout({
     home?: boolean
 }) {
     return (
-        <div>
+        <>
             <SiteHead />
+            <Script
+                async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} />
+            <Script
+                dangerouslySetInnerHTML={{
+                    __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+                `,
+                }}
+            />
             <Script
                 src="https://connect.facebook.net/en_US/sdk.js"
                 strategy="lazyOnload"
@@ -55,6 +67,6 @@ export default function Layout({
             </div>
 
             <Footer />
-        </div>
+        </>
     );
 }
