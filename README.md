@@ -1,6 +1,13 @@
 This is a blog by T.Yajime.
 
-## Usage
+Here is the website in operation.
+
+https://yajimaga-tech-blog.vercel.app/
+
+## Usage 
+
+When running in your local environment, please execute the following command.
+
 ### 1. Install packages
 
 ```sh
@@ -12,3 +19,7 @@ npm i
 ```sh
 npm run dev
 ```
+
+### 3. Access the Web site
+
+http://localhost:3000
