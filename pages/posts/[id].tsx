@@ -8,6 +8,7 @@ import CodeBlock from '../../components/CodeBlock';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import remarkGfm from 'remark-gfm';
 
 export default function Post({
     postData
@@ -36,6 +37,7 @@ export default function Post({
                 </div>
                 <ReactMarkDown
                     components={CodeBlock}
+                    remarkPlugins={[remarkGfm]}
                 >
                     {postData.contentHtml}
                 </ReactMarkDown>
