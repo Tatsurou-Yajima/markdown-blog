@@ -1,6 +1,6 @@
-![tech-banner](https://user-images.githubusercontent.com/44424270/232454201-8413bc06-5b3d-4750-84d7-5526eabaa05b.png)
+![tech-banner (1)](https://user-images.githubusercontent.com/44424270/232628624-77bff7a0-0101-483e-8e5e-db6a2b70d64e.png)
 
-## Tech blog by T.Yajima
+## About
 
 This is a blog by T.Yajime.
 
