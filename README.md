@@ -8,6 +8,9 @@ Here is the website in operation.
 
 https://yajimaga-tech-blog.vercel.app/
 
+![image](https://github.com/Tatsurou-Yajima/tech-blog-by-t-yajima/assets/44424270/fc110c59-9121-4db4-9b66-d9c384f2e641)
+
+
 ## Usage 
 
 When running in your local environment, please execute the following command.
