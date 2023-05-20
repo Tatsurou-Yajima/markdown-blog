@@ -14,7 +14,15 @@ body {
 }
 
 a {
-    color: #003b88;
+    color: #268bca;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+aside a:hover {
     text-decoration: none;
 }
 
