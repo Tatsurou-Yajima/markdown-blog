@@ -1,8 +1,8 @@
-![tech-banner (1)](https://user-images.githubusercontent.com/44424270/232628624-77bff7a0-0101-483e-8e5e-db6a2b70d64e.png)
+![top-image](https://github.com/Tatsurou-Yajima/blog-built-with-Next.js/assets/44424270/b475fec5-a2d7-4bb5-bb1a-5b99c05eb917)
 
 ## About
 
-This is a blog by T.Yajime.
+A blog built with Next.js.
 
 Here is the website in operation.
 
