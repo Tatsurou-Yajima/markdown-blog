@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next-remote-watch md",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -27,7 +27,6 @@
   "devDependencies": {
     "@types/node": "20.2.3",
     "autoprefixer": "^10.4.14",
-    "next-remote-watch": "^2.0.0",
     "postcss": "^8.4.23",
     "typescript": "5.0.4"
   }
