@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import remarkGfm from 'remark-gfm';
 
-export default function Post({
+const Post = ({
     postData
 }: {
     postData: {
@@ -19,7 +19,7 @@ export default function Post({
         contentHtml: string
         thumbnail: string
     }
-}) {
+    }) => {
     return (
         <Layout>
             <Head>
@@ -44,7 +44,7 @@ export default function Post({
             </article>
         </Layout>
     );
-}
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllPostIds();
@@ -62,3 +62,5 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         }
     };
 }
+
+export default Post;
