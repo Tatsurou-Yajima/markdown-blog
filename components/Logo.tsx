@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/layout.module.css';
 
-export default function () {
+export default function Logo() {
     return (
         <>
             <div className={styles.logoContainer}>
