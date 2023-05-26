@@ -1,28 +1,29 @@
+import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { CodeComponent } from 'react-markdown/lib/ast-to-react'
 
-export default {
-    code({ node, inline, className, children, ...props }) {
-        const match = /language-(\w+)(:?.*)/.exec(className || '');
-        const language = match && match[1] ? match[1] : '';
-        const fileName = match && match[2] ? match[2].slice(1) : '';
-        const syntaxHighlighterClass = fileName
-            ? "code-block-with-title"
-            : "code-block";
-        return !inline && match ? (
-            <>
-                <div className="code-block-wrapper">
-                    {fileName && <div className="code-block-title">{fileName}</div>}
-                    <SyntaxHighlighter
-                        style={atomDark}
-                        language={language}
-                        PreTag="div" {...props}
-                        className={syntaxHighlighterClass}
-                    >
-                        {String(children).replace(/\n$/, '')}
-                    </SyntaxHighlighter>
-                </div>
-                <style jsx>{`
+const customCode: CodeComponent = ({ node, inline, className, children, ...props }) => {
+    const match = /language-(\w+)(:?.*)/.exec(className || '');
+    const language = match && match[1] ? match[1] : '';
+    const fileName = match && match[2] ? match[2].slice(1) : '';
+    const syntaxHighlighterClass = fileName
+        ? "code-block-with-title"
+        : "code-block";
+    return !inline && match ? (
+        <div>
+            <div className="code-block-wrapper">
+                {fileName && <div className="code-block-title">{fileName}</div>}
+                <SyntaxHighlighter
+                    style={atomDark}
+                    language={language}
+                    PreTag="div" {...props}
+                    className={syntaxHighlighterClass}
+                >
+                    {String(children).replace(/\n$/, '')}
+                </SyntaxHighlighter>
+            </div>
+            <style jsx>{`
             .code-block-wrapper {
             font-size: 0.9rem;
             margin-bottom: 2rem;
@@ -38,7 +39,7 @@ export default {
                 monospace;
             }
         `}</style>
-                <style jsx global>{`
+            <style jsx global>{`
             .code-block {
                 border-radius: 0.3rem !important;
                 padding: 1.5rem !important;
@@ -49,11 +50,15 @@ export default {
             margin-top: 0 !important;
             }
         `}</style>
-            </>
-        ) : (
-            <code className={className} {...props} >
-                {children}
-            </code>
-        );
-    },
+        </div>
+    ) : (
+        <code className={className} {...props} >
+            {children}
+        </code>
+    );
 };
+
+const CodeBlock = {
+    code: customCode,
+}
+export default CodeBlock
