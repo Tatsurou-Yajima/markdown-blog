@@ -8,13 +8,13 @@ import Logo from './Logo';
 import SiteHead from './Head';
 import Footer from './Footer';
 
-export default function Layout({
+const LayoutComponent = ({
     children,
     home
 }: {
     children: React.ReactNode
     home?: boolean
-}) {
+}) => {
     return (
         <>
             <SiteHead />
@@ -70,3 +70,5 @@ export default function Layout({
         </>
     );
 }
+
+export default LayoutComponent;

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout from '../components/layout';
+import LayoutComponent from '../components/LayoutComponent';
 import { SiteTitle } from '../components/Head';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
@@ -21,7 +21,7 @@ export default function Home({
     }[]
 }) {
     return (
-        <Layout home>
+        <LayoutComponent home>
             <Head>
                 <title>{SiteTitle}</title>
             </Head>
@@ -48,7 +48,7 @@ export default function Home({
                     </section>
                 </aside>
             </article>
-        </Layout>
+        </LayoutComponent>
     );
 }
 

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CodeBlock from './CodeBlock';
 import Date from './date';
 import Head from 'next/head';
-import Layout from './layout';
+import LayoutComponent from './LayoutComponent';
 import ReactMarkDown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import UtilStyles from '../styles/utils.module.css';
@@ -19,7 +19,7 @@ const PostComponent = ({
     }
 }) => {
     return (
-        <Layout>
+        <LayoutComponent>
             <Head>
                 <title>{postData.title}</title>
                 <meta name='og:title' content={postData.title} />
@@ -40,7 +40,7 @@ const PostComponent = ({
                     {postData.contentHtml}
                 </ReactMarkDown>
             </article>
-        </Layout>
+        </LayoutComponent>
     );
 };
 
