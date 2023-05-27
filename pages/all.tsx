@@ -11,9 +11,9 @@ import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Home({
-    limitedPostsData
+    allPostsData
 }: {
-        limitedPostsData: {
+    allPostsData: {
         date: string
         title: string
         id: string
@@ -28,7 +28,7 @@ export default function Home({
             <article className={utilStyles.articlePadding}>
                 <aside>
                     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                        {limitedPostsData.map(({ id, date, title, thumbnail }) => (
+                        {allPostsData.map(({ id, date, title, thumbnail }) => (
                             <Link className={utilStyles.articleLink} href={`/posts/${id}`} key={id}>
                                 <dl className={utilStyles.articleDl}>
                                     <dt className={utilStyles.articleDt}>
@@ -49,19 +49,18 @@ export default function Home({
                 </aside>
             </article>
             <div className="text-center pb-4">
-                <Link href="/all" className='top-to-all link-secondary'>全て表示</Link>
+                <Link className='link-secondary' href="/">← TOP</Link>
             </div>
-        </LayoutComponent>
+        </LayoutComponent >
     );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
     const allPostsData = getSortedPostsData();
-    const limitedPostsData = allPostsData.slice(0, 10);
 
     return {
         props: {
-            limitedPostsData
+            allPostsData
         }
     };
 }
