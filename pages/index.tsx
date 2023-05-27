@@ -1,53 +1,27 @@
-import Head from 'next/head';
-import LayoutComponent from '../components/LayoutComponent';
-import { SiteTitle } from '../components/Head';
-import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date'
-import { GetStaticProps } from 'next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import { getSortedPostsData } from '../lib/posts'
+import { GetStaticProps } from 'next'
+import { SiteTitle } from '../components/Head'
+import Articles from '../components/Articles'
+import Head from 'next/head'
+import LayoutComponent from '../components/LayoutComponent'
+import Link from 'next/link'
 
-
-export default function Home({
+const Index = ({
     limitedPostsData
 }: {
         limitedPostsData: {
-        date: string
-        title: string
-        id: string
-        thumbnail: string
-    }[]
-}) {
+            date: string
+            title: string
+            id: string
+            thumbnail: string
+        }[]
+    }) => {
     return (
         <LayoutComponent home>
             <Head>
                 <title>{SiteTitle}</title>
             </Head>
-            <article className={utilStyles.articlePadding}>
-                <aside>
-                    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                        {limitedPostsData.map(({ id, date, title, thumbnail }) => (
-                            <Link className={utilStyles.articleLink} href={`/posts/${id}`} key={id}>
-                                <dl className={utilStyles.articleDl}>
-                                    <dt className={utilStyles.articleDt}>
-                                        <img className={utilStyles.thumbnail} src={thumbnail} />
-                                    </dt>
-                                    <dd className={`${utilStyles.listItem}} ${utilStyles.articleDd} text-dark`} key={id}>
-                                        {title}
-                                        <br />
-                                        <small className={`${utilStyles.lightText} ${utilStyles.publishDate}`}>
-                                            <FontAwesomeIcon className={utilStyles.calenderIcon} icon={faCalendarDays} />
-                                            <Date dateString={date} />
-                                        </small>
-                                    </dd>
-                                </dl>
-                            </Link>
-                        ))}
-                    </section>
-                </aside>
-            </article>
+            <Articles postData={limitedPostsData} />
             <div className="text-center pb-4">
                 <Link href="/all" className='top-to-all link-secondary'>全て表示</Link>
             </div>
@@ -56,8 +30,8 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const allPostsData = getSortedPostsData();
-    const limitedPostsData = allPostsData.slice(0, 10);
+    const allPostsData = getSortedPostsData()
+    const limitedPostsData = allPostsData.slice(0, 10)
 
     return {
         props: {
@@ -65,3 +39,5 @@ export const getStaticProps: GetStaticProps = async () => {
         }
     };
 }
+
+export default Index

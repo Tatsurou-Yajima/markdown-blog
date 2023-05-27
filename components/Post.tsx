@@ -1,12 +1,12 @@
-import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CodeBlock from './CodeBlock';
-import Date from './date';
-import Head from 'next/head';
-import LayoutComponent from './LayoutComponent';
-import ReactMarkDown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import UtilStyles from '../styles/utils.module.css';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import CodeBlock from './CodeBlock'
+import DateComponent from './DateComponent'
+import Head from 'next/head'
+import LayoutComponent from './LayoutComponent'
+import ReactMarkDown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import UtilStyles from '../styles/utils.module.css'
 
 const PostComponent = ({
     postData
@@ -31,7 +31,7 @@ const PostComponent = ({
             <article className={UtilStyles.articlePadding}>
                 <div className={UtilStyles.lightText}>
                     <FontAwesomeIcon className={UtilStyles.calenderIcon} icon={faCalendarDays} />
-                    <Date dateString={postData.date} />
+                    <DateComponent dateString={postData.date} />
                 </div>
                 <ReactMarkDown
                     components={CodeBlock}
@@ -44,4 +44,4 @@ const PostComponent = ({
     );
 };
 
-export default PostComponent;
+export default PostComponent
