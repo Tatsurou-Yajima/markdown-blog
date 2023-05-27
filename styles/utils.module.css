@@ -223,6 +223,9 @@
         padding: 1em;
     }
 }
+.articleLink {
+    text-decoration: none;
+}
 .articleLink:hover {
     opacity: 0.7;
     transition: all .5s;

@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.2.3",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
     "next": "latest",

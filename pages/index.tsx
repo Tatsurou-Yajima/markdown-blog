@@ -48,6 +48,9 @@ export default function Home({
                     </section>
                 </aside>
             </article>
+            <div className="text-center">
+                <Link href="/all" className='top-to-all'>全て表示</Link>
+            </div>
         </LayoutComponent>
     );
 }
