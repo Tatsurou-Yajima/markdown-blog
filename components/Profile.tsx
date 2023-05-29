@@ -25,6 +25,11 @@ export default function Profile() {
                             <i className={`fab fa-instagram`}></i>
                         </a>
                     </li>
+                    <li className={`${utilStyles.gitHub} ${utilStyles.snsCircle}`}>
+                        <a rel="nofollow" href="https://github.com/Tatsurou-Yajima" target="_blank" className={utilStyles.snsLink}>
+                            <i className="fab fa-github"></i>
+                        </a>
+                    </li>
                 </ul>
             </aside>
         </div>
