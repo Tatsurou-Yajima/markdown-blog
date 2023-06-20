@@ -53,6 +53,7 @@ article h2 {
 
 article h3 {
     margin-top: 2em;
+    margin-bottom: 1em;
     border-left: solid 3px #afafaf;
     padding: 2px 8px;
     background: #fbfbfb;
