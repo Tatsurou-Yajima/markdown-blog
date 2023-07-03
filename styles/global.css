@@ -16,6 +16,7 @@ body {
 a {
     color: #268bca;
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 article a:hover {
