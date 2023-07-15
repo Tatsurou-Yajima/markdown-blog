@@ -1,8 +1,9 @@
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { NextSeo } from 'next-seo'
+import { useRouter } from 'next/router'
 import CodeBlock from './CodeBlock'
 import DateComponent from './DateComponent'
-import Head from 'next/head'
 import LayoutComponent from './LayoutComponent'
 import ReactMarkDown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -16,18 +17,20 @@ const PostComponent = ({
         date: string
         contentHtml: string
         thumbnail: string
+        id: string
     }
-}) => {
+    }) => {
+    const router = useRouter()
+
     return (
         <LayoutComponent>
-            <Head>
-                <title>{postData.title}</title>
-                <meta name='og:title' content={postData.title} />
-                <meta name="twitter:title" content={postData.title} />
-                <meta name="twitter:title" content={postData.title} />
-                <meta name='twitter:image' content={postData.thumbnail} />
-                <meta property='og:image' content={postData.thumbnail} />
-            </Head>
+            <NextSeo
+                title={postData.title}
+                description={postData.title}
+                openGraph={{
+                    url: process.env.NEXT_PUBLIC_DOMAIN + router.asPath,
+                }}
+            />
             <article className={UtilStyles.articlePadding}>
                 <div className={UtilStyles.lightText}>
                     <FontAwesomeIcon className={UtilStyles.calenderIcon} icon={faCalendarDays} />

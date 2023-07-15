@@ -12,26 +12,26 @@ export default function App({ Component, pageProps }: AppProps) {
                 content='minimum-scale=1, initial-scale=1, width=device-width'
             </Head>
             <DefaultSeo
-                defaultTitle='YajiMaga-TECH'
-                description='サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。'
+                defaultTitle={process.env.NEXT_PUBLIC_SITE_TITLE}
+                description={process.env.NEXT_PUBLIC_DESCRIPTION}
                 openGraph={{
                     type: 'website',
-                    description: 'サーバーサイドエンジニアの技術ブログです。バグ解消法や最近学んだことなどを発信していきます。',
-                    site_name: 'YajiMaga-TECH',
-                    url: 'https://yajimaga-tech-blog.vercel.app/',
+                    description: process.env.NEXT_PUBLIC_DESCRIPTION,
+                    site_name: process.env.NEXT_PUBLIC_SITE_TITLE,
+                    url: process.env.NEXT_PUBLIC_DOMAIN,
                     images: [
                         {
-                            url: 'https://images-for-yajima-tech-blog.s3.ap-northeast-1.amazonaws.com/top-image-20230214.jpg',
+                            url: process.env.NEXT_PUBLIC_DEFAULT_IMAGE,
                             width: 800,
                             height: 600,
-                            alt: 'YajiMaga-TECH',
+                            alt: process.env.NEXT_PUBLIC_SITE_TITLE,
                             type: 'image/jpeg',
                         },
                     ],
                 }}
                 twitter={{
-                    handle: '@Yazmatto',
-                    site: '@Yazmatto',
+                    handle: process.env.NEXT_PUBLIC_TWITTER_ACCOUNT,
+                    site: process.env.NEXT_PUBLIC_TWITTER_ACCOUNT,
                     cardType: 'summary_large_image',
                 }}
             />
