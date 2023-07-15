@@ -30,3 +30,27 @@ npm run dev
 ### 3. Access the Web site
 
 http://localhost:3000
+
+## How to manage packages
+
+Within this program, I use a library called npm-check-updates.
+
+https://github.com/raineorshine/npm-check-updates
+
+### 1. Displays the current version
+
+```bash
+ncu
+```
+
+### 2. Update package.json
+
+```bash
+ncu -u
+```
+
+### 3. Install
+
+```bash
+npm i
+```
