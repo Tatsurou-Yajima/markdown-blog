@@ -5,7 +5,6 @@ import styles from '../styles/layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Profile from './Profile';
 import Logo from './Logo';
-import SiteHead from './Head';
 import Footer from './Footer';
 
 const LayoutComponent = ({
@@ -17,7 +16,6 @@ const LayoutComponent = ({
 }) => {
     return (
         <>
-            <SiteHead />
             <Script
                 async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} />
             <Script
