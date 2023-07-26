@@ -43,6 +43,9 @@ ul {
     line-height: 2em;
 }
 
+article pre {
+    overflow: inherit;
+}
 article h2 {
     margin-top: 2.3em;
     margin-bottom: 1em;
