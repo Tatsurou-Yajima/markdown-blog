@@ -29,6 +29,12 @@ const PostComponent = ({
                 description={postData.title}
                 openGraph={{
                     url: process.env.NEXT_PUBLIC_DOMAIN + router.asPath,
+                    description: postData.title,
+                    images: [
+                        {
+                            url: process.env.NEXT_PUBLIC_DEFAULT_IMAGE,
+                        },
+                    ],
                 }}
             />
             <article className={UtilStyles.articlePadding}>
