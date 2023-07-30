@@ -32,7 +32,7 @@ const PostComponent = ({
                     description: postData.title,
                     images: [
                         {
-                            url: process.env.NEXT_PUBLIC_DEFAULT_IMAGE,
+                            url: postData.thumbnail,
                         },
                     ],
                 }}
