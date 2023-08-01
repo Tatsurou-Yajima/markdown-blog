@@ -22,6 +22,8 @@ const PostComponent = ({
     }) => {
     const router = useRouter()
 
+    const fileExtension = postData.thumbnail.split('.').pop()
+
     return (
         <LayoutComponent>
             <NextSeo
@@ -35,6 +37,7 @@ const PostComponent = ({
                             url: postData.thumbnail,
                         },
                     ],
+                    type: 'image/' + fileExtension,
                 }}
             />
             <article className={UtilStyles.articlePadding}>
