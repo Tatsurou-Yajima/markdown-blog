@@ -35,9 +35,9 @@ const PostComponent = ({
                     images: [
                         {
                             url: postData.thumbnail,
+                            type: 'image/' + fileExtension,
                         },
                     ],
-                    type: 'image/' + fileExtension,
                 }}
             />
             <article className={UtilStyles.articlePadding}>
