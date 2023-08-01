@@ -25,7 +25,6 @@ export default function App({ Component, pageProps }: AppProps) {
                             width: 800,
                             height: 600,
                             alt: process.env.NEXT_PUBLIC_SITE_TITLE,
-                            type: 'image/jpeg',
                         },
                     ],
                 }}

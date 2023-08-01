@@ -22,8 +22,6 @@ const PostComponent = ({
     }) => {
     const router = useRouter()
 
-    const fileExtension = postData.thumbnail.split('.').pop()
-
     return (
         <LayoutComponent>
             <NextSeo
@@ -32,10 +30,10 @@ const PostComponent = ({
                 openGraph={{
                     url: process.env.NEXT_PUBLIC_DOMAIN + router.asPath,
                     description: postData.title,
+                    type: 'article',
                     images: [
                         {
                             url: postData.thumbnail,
-                            type: 'image/' + fileExtension,
                         },
                     ],
                 }}
