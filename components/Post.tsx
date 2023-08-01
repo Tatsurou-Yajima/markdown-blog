@@ -22,6 +22,8 @@ const PostComponent = ({
     }) => {
     const router = useRouter()
 
+    const fileExtension = postData.thumbnail.split('.').pop()
+
     return (
         <LayoutComponent>
             <NextSeo
@@ -33,6 +35,7 @@ const PostComponent = ({
                     images: [
                         {
                             url: postData.thumbnail,
+                            type: 'image/' + fileExtension,
                         },
                     ],
                 }}
