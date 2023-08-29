@@ -27,7 +27,17 @@ npm i
 npm run dev
 ```
 
-### 3. Access the Web site
+### 3. Create .env_local
+
+Create .env_local file in the root directory.
+
+The .env_local file you create will contain your information.
+
+Refer to your existing .env file and include your account information, etc.
+
+The .env_local file is not Git managed and will always overwrite the contents of the existing .env file.
+
+### 4. Access the Web site
 
 http://localhost:3000
 
