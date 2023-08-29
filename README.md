@@ -37,6 +37,8 @@ Refer to your existing `.env` file and include your account information, etc.
 
 The `.env.local` file is not Git managed and will always overwrite the contents of the existing `.env` file.
 
+<img width="571" alt="image" src="https://github.com/Tatsurou-Yajima/blog-built-with-Next.js/assets/44424270/7d03eb71-0696-466a-9684-7be0f5489525">
+
 ### 4. Access the Web site
 
 http://localhost:3000
