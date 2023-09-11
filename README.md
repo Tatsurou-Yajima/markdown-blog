@@ -1,8 +1,8 @@
-![markdown-blog-top-image](https://github.com/Tatsurou-Yajima/markdown-blog/assets/44424270/a36090d3-70c8-4053-ac6f-9513c38fb1df)
+![markdown-blog-top-image](https://github.com/Tatsurou-Yajima/markdown-blog/assets/44424270/f0ae1572-b083-4981-845a-32f8d9c519d7)
 
-## About
+## Overview
 
-A blog built with Next.js.
+This i a markdown blog built with Next.js.
 
 Here is the website in operation.
 
