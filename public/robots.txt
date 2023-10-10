@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yajimaga-tech-blog.vercel.app
+
+# Sitemaps
+Sitemap: https://yajimaga-tech-blog.vercel.app/sitemap.xml
