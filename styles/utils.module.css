@@ -248,6 +248,7 @@
 
 .thumbnail {
     object-fit: cover;
+    margin: inherit;
 }
 
 .displayInPC {
