@@ -30,6 +30,7 @@ aside a:hover {
 img {
     max-width: 100%;
     display: block;
+    margin: auto;
 }
 
 code:not([class]) {
