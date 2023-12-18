@@ -1,11 +1,10 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { CodeComponent } from 'react-markdown/lib/ast-to-react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { FaRegClone } from "react-icons/fa";
 
-const customCode: CodeComponent = ({ node, inline, className, children, ...props }) => {
+const customCode = ({ node, inline, className, children, ...props }) => {
     const [isCopied, setIsCopied] = React.useState(false);
     const onCopyClicked = () => {
         setIsCopied(true);
