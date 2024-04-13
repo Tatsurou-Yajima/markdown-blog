@@ -16,6 +16,14 @@ export default function App({ Component, pageProps }: AppProps) {
                     name="google-site-verification"
                     content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
                 />
+                <meta
+                    name="author"
+                    content={process.env.NEXT_PUBLIC_SITE_TITLE}
+                />
+                <meta
+                    name="description"
+                    content={process.env.NEXT_PUBLIC_DESCRIPTION}
+                />
             </Head>
             <DefaultSeo
                 defaultTitle={process.env.NEXT_PUBLIC_SITE_TITLE}
