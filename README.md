@@ -6,7 +6,7 @@ This i a markdown blog built with Next.js.
 
 Here is the website in operation.
 
-https://yajimaga-tech-blog.vercel.app/
+https://yajima.sytes.net
 
 ![image](https://github.com/Tatsurou-Yajima/tech-blog-by-t-yajima/assets/44424270/fc110c59-9121-4db4-9b66-d9c384f2e641)
 
