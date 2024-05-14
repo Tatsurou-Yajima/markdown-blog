@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://yajimaga-tech-blog.vercel.app
+Host: https://yajima.sytes.net
 
 # Sitemaps
-Sitemap: https://yajimaga-tech-blog.vercel.app/sitemap.xml
+Sitemap: https://yajima.sytes.net/sitemap.xml
