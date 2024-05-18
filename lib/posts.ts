@@ -9,11 +9,18 @@ export function getSortedPostsData() {
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName) => {
+        // Get the full path of the file
+        const fullPath = path.join(postsDirectory, fileName);
+
+        // Check if the path is a directory
+        if (fs.statSync(fullPath).isDirectory()) {
+            return null; // If it's a directory, skip it
+        }
+
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\.md$/, '');
 
         // Read markdown file as string
-        const fullPath = path.join(postsDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
         // Use gray-matter to parse the post metadata section
@@ -24,7 +31,8 @@ export function getSortedPostsData() {
             id,
             ...(matterResult.data as { date: string, title: string }),
         };
-    });
+    }).filter(post => post !== null); // Remove null values from the array
+
     // Sort posts by date
     return allPostsData.sort((a, b) => {
         if (a.date < b.date) {
