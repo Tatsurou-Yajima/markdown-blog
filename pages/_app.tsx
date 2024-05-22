@@ -24,6 +24,14 @@ export default function App({ Component, pageProps }: AppProps) {
                     name="description"
                     content={process.env.NEXT_PUBLIC_DESCRIPTION}
                 />
+                <script
+                    key="json-ld"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: `{
+                            "name": "YajiMaga-Tech"
+                        }` }}
+                />
             </Head>
             <DefaultSeo
                 defaultTitle={process.env.NEXT_PUBLIC_SITE_TITLE}
