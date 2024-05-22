@@ -24,20 +24,14 @@ export default function App({ Component, pageProps }: AppProps) {
                     name="description"
                     content={process.env.NEXT_PUBLIC_DESCRIPTION}
                 />
-                <script
-                    key="json-ld"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: `{
-                            "name": "YajiMaga-Tech"
-                        }` }}
-                />
             </Head>
             <DefaultSeo
+                title={process.env.NEXT_PUBLIC_SITE_TITLE}
                 defaultTitle={process.env.NEXT_PUBLIC_SITE_TITLE}
                 description={process.env.NEXT_PUBLIC_DESCRIPTION}
                 openGraph={{
                     type: 'website',
+                    title: process.env.NEXT_PUBLIC_SITE_TITLE,
                     description: process.env.NEXT_PUBLIC_DESCRIPTION,
                     site_name: process.env.NEXT_PUBLIC_SITE_TITLE,
                     url: process.env.NEXT_PUBLIC_DOMAIN,
